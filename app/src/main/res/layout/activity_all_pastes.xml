@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    android:padding="25dp"
+    tools:context=".AllPastes">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_pasteboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_pasteboard"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:hint="Paste your contents here"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:background="@drawable/pasteboard"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_with_google_btn"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_pasteboard"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/save_btn"
+        android:padding="10dp"
+        android:text="Save the paste"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</RelativeLayout>
